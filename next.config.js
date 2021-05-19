@@ -14,7 +14,6 @@ module.exports = {
         {
           source: "/:path*",
           destination: `https://www.nextjs.org/:path*`,
-          locale: false,
         },
       ],
       fallback: [],

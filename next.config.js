@@ -11,13 +11,13 @@ module.exports = {
           source: "/posts/:id",
           destination: "/posts/:id",
         },
-        // {
-        //   source: "/:path*",
-        //   destination: `https://www.nextjs.org/:path*`,
-        //   locale: false,
-        // },
       ],
-      fallback: [],
-    };
+      fallback: [        
+        {
+        source: "/:path*",
+        destination: `https://www.nextjs.org/:path*`,
+        locale: false,
+      },
+      ]
   },
 };

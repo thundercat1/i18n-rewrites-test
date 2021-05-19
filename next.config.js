@@ -4,7 +4,7 @@ module.exports = {
     locales: ["en-US", "fr", "nl-NL"],
     defaultLocale: "en-US",
   },
-  rewrites: {
+  async rewrites() {
     afterFiles: [
       {
         source: "/blog/:id",

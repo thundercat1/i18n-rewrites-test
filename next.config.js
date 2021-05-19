@@ -12,6 +12,10 @@ module.exports = {
           destination: "/posts/:id",
         },
         {
+          source: "/_next/:path*",
+          destination: "/_next/:path*",
+        },
+        {
           source: "/:path*",
           destination: `https://www.nextjs.org/:path*`,
           locale: false,
